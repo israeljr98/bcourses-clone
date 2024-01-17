@@ -3,215 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bCourses Clone</title>
+    <title>Canvas Clone</title>
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
-    <div class="nav">
-        <div class="nav--button nav-button---logo">
-            <img id="logo" src="assets/img/logo.png" alt="">
+    <div class="content-container">
+        <div class="nav">
+            <div class="nav--button nav-button---logo">
+                <img id="logo" src="assets/img/logo.png" alt="">
+            </div>
+            <div class="nav--button nav--button--account">
+                <img src="assets/img/account.png" alt="">
+                Account
+            </div>
+            <div class="nav--button nav--button--home">
+                <img src="assets/img/dashboard.png" alt="">
+                Dashboard
+            </div>
+            <div class="nav--button nav--button--courses">
+                <img src="assets/img/courses.png" alt="">
+                Courses
+            </div>
+            <div class="nav--button nav--button--calendar">
+                <img src="assets/img/calendar.png" alt="">
+                Calendar
+            </div>
+            <!-- <div class="nav--button nav--button--inbox">
+                <img src="assets/img/inbox.png" alt="">
+                Inbox
+            </div> -->
         </div>
-        <div class="nav--button nav--button--account">
-            <img src="assets/img/account.png" alt="">
-            Account
+
+        <div class="account-section" id="account">
+            <div class="under">
+                <div class="x">
+                    <button>x</button>
+                </div>
+                <div id="profile-info">
+                    <div id="profile-img-wrapper">
+                            <img src="https://www.wabash.edu/images2/technology/canvas.png" alt="">
+                    </div>
+                    <h1>Sancho Perez</h1>
+                    <button id="logout">Logout</button>
+                </div>
+                <div id="account-links">
+                    <ul id="acc-links">
+                        <a href="#"><li>Profile</li></a>
+                        <a href="#"><li>Settings</li></a>
+                        <a href="#"><li>Notifications</li></a>
+                        <a href="#"><li>Files</li></a>
+                        <a href="#"><li>ePortfolios</li></a>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="nav--button nav--button--home">
-            <img src="assets/img/dashboard.png" alt="">
-            Dashboard
+
+        <div class="account-section" id="courses">
+            <div class="under">
+                <div class="x">
+                  <button>x</button>
+                </div>
+                <div id="course-info">
+                    <h1>Courses</h1>
+                </div>
+                <div id="course-links">
+                    <ul id="course-list">
+                        <a href="#"><li>Web Design Decal</li></a>
+                        <a href="#"><li>Data Structures & Algorithms</li></a>
+                        <a href="#"><li>PHILOS 2 (Nautre of Ethics)</li></a>
+                        <a href="#"><li>Cultural Psychology</li></a>
+                        <a href="#"><li>CS170: Algorithms</li></a>
+                    </ul>
+                </div>
+                <div id="all-courses-link">
+                    <ul>
+                        <a href="#">All Courses</a>
+                        <p>Welcome to your courses. To customize the list of courses, click on the "All Courses" link and star the courses to display.</p>
+                    </ul> 
+                </div>
+            </div>
         </div>
-        <div class="nav--button nav--button--courses">
-            <img src="assets/img/courses.png" alt="">
-            Courses
+
+        <div id="nav-mobile">
+            <div class="nav-hamburger">
+                <img src="assets/img/hamburger.png" alt="">
+            </div>
+            <h2 id="dashboard-mobile"> Dashboard </h2>
         </div>
-        <div class="nav--button nav--button--calendar">
-            <img src="assets/img/calendar.png" alt="">
-            Calendar
-        </div>
-        <div class="nav--button nav--button--inbox">
-            <img src="assets/img/inbox.png" alt="">
-            Inbox
-        </div>
-        <div class="nav--button nav--button--reading">
-            <img src="assets/img/assignment.png" alt="">
-              Reading
+
+        
+
+        
+        <div class="main">
+            
+                <div class="dashboard">
+                    <div class="dashboard--title">
+                        <h1 id="db">Dashboard</h1>
+                        <div class="dashboard--title__dots">
+                            <img src="assets/img/menu.png" alt="dots">
+                        </div>
+                    </div>
+                    <div class="dashboard--classes">
+                        <div class="dashboard--classes__box dashboard--classes__box__1">
+                            <div class="dashboard--classes__box__image"></div>
+                            <div class="dashboard--classes__box__description">
+                                <div class="dashboard--classes__box__controls__text">
+                                    <h2>Web Design Decal</h2>
+                                    <h3>CS 198 - lec 001</h3>
+                                    <h4>Spring 2021</h4>
+                                </div>
+                                <div class="dashboard--classes__box__controls__buttons">
+                                    <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
+                                    <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
+                                    <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
+                                    <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard--classes__box dashboard--classes__box__2">
+                            <div class="dashboard--classes__box__image"></div>
+                            <div class="dashboard--classes__box__description">
+                                <div class="dashboard--classes__box__controls__text">
+                                    <h2>Data Structures & Algorithms</h2>
+                                    <h3>CS 61B - lec 001</h3>
+                                    <h4>Spring 2020</h4>
+                                </div>
+                                <div class="dashboard--classes__box__controls__buttons">
+                                    <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
+                                    <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
+                                    <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
+                                    <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="dashboard--classes__box dashboard--classes__box__3">
+                            <div class="dashboard--classes__box__image"></div>
+                           <div class="dashboard--classes__box__description">
+                                <div class="dashboard--classes__box__controls__text">
+                                    <h2>Artificial Intelligence</h2>
+                                    <h3>CS 188 - lec 001</h3>
+                                    <h4>Spring 2021</h4>
+                                </div>
+                                <div class="dashboard--classes__box__controls__buttons">
+                                    <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
+                                    <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
+                                    <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
+                                    <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="dashboard--classes__box dashboard--classes__box__4">
+                            <div class="dashboard--classes__box__image"></div>
+                           <div class="dashboard--classes__box__description">
+                                <div class="dashboard--classes__box__controls__text">
+                                    <h2>Algorithms & Intractable Problems</h2>
+                                    <h3>CS 170 - lec 001</h3>
+                                    <h4>Fall 2020</h4>
+                                </div>
+                                <div class="dashboard--classes__box__controls__buttons">
+                                    <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
+                                    <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
+                                    <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
+                                    <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="dashboard--classes__box dashboard--classes__box__5">
+                            <div class="dashboard--classes__box__image"></div>
+                            <div class="dashboard--classes__box__description">
+                                <div class="dashboard--classes__box__controls__text">
+                                    <h2>Nature of Ethics</h2>
+                                    <h3>PHILOS 2</h3>
+                                    <h4>Fall 2017</h4>
+                                </div>
+                                <div class="dashboard--classes__box__controls__buttons">
+                                    <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
+                                    <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
+                                    <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
+                                    <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="dashboard--classes__box dashboard--classes__box__6">
+                            <div class="dashboard--classes__box__image"></div>
+                           <div class="dashboard--classes__box__description">
+                                <div class="dashboard--classes__box__controls__text">
+                                    <h2>Cultural Psychology</h2>
+                                    <h3>COGSCI C127</h3>
+                                    <h4>Fall 2019</h4>
+                                </div>
+                                <div class="dashboard--classes__box__controls__buttons">
+                                    <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
+                                    <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
+                                    <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
+                                    <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notifications">
+                    <img src="assets/img/bcourses.png" alt="" id="bcourses">
+                    <div class="notifications__todo--title">
+                        <h2>To Do</h2>
+                    </div>
+                    <div class="notifications__notifs">
+                        <div class="notifications__notifs--box">
+                            <img src="assets/img/announcements.png" alt="">
+                            <div class="notifications__notifs--text">
+                                <h1>Homework #5!</h1>
+                                <h2>Web Design Decal</h2>
+                                <h3>March 10, 2021 at 11:59 PM</h3>
+                            </div>
+                        </div>
+                        <div class="notifications__notifs--box">
+                            <img src="assets/img/announcements.png" alt="">
+                            <div class="notifications__notifs--text">
+                                <h1>Final Review Sessions</h1>
+                                <h2>COGSCI C127</h2>
+                                <h3>March 5, 2020</h3>
+                            </div>
+                        </div>
+                        <div class="notifications__notifs--box">
+                            <img src="assets/img/announcements.png" alt="">
+                            <div class="notifications__notifs--text">
+                                <h1>Reading Respose #3 Due!</h1>
+                                <h2>Cultural Psychology</h2>
+                                <h3>July 17, 2019 at 11:59 PM</h3>
+                            </div>
+                        </div>
+                        <div class="notifications__notifs--box">
+                            <img src="assets/img/announcements.png" alt="">
+                            <div class="notifications__notifs--text">
+                                <h1>Midterm Scores Released</h1>
+                                <h2>CS61B</h2>
+                                <h3>March 19, 2020 at 12:59 PM</h3>
+                            </div>
+                        </div>
+                        <div class="notifications__notifs--box">
+                            <img src="assets/img/announcements.png" alt="">
+                            <div class="notifications__notifs--text">
+                                <h1>Problem Set #4</h1>
+                                <h2>CS 170</h2>
+                                <h3>September 29, 2020 at 11:59 PM</h3>
+                            </div>
+                        </div>
+                        <div class="notifications__notifs--box">
+                            <img src="assets/img/announcements.png" alt="">
+                            <div class="notifications__notifs--text">
+                                <h1>Syllabus Week</h1>
+                                <h2>PHILOS 3</h2>
+                                <h3>October 19, 2017 at 11:59 PM</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="big-content hidden" id="cal">
+                <div id="calendar-controls">
+                    <div id="calendar-controls-left">
+                      <button id="today">Today</button>
+                      <button class="left-right" id="prev-month" onclick="prevMonth()"><</button>
+                      <button class="left-right" id="next-month" onclick="nextMonth()">></button>
+                        <button id="curr-month" class="exclude">January 2024</button>
+                        <button id="curr-week" class="exclude hidden">January 2024</button>
+                    </div>
+                      <div id="calendar-controls-right">
+                        <button id="weekly">Week</button>
+                        <button id="monthly" class="active-btn">Month</button>
+                        <button id="add-event">+</button>
+                      </div>
+                  </div>
+                    
+                    
+                  <table id="monthly-calendar">
+                      <thead>
+                        <tr>
+                          <th>SUN</th>
+                          <th>MON</th>
+                          <th>TUE</th>
+                          <th>WED</th>
+                          <th>THU</th>
+                          <th>FRI</th>
+                          <th>SAT</th>
+                        </tr>
+                      </thead>
+                      <tbody id="calendar-body">
+                        <!-- Calendar days will be dynamically added here -->
+                      </tbody>
+                    </table>
+                    
+                    <div class="calendar-container">
+                      <table id="weekly-calendar" class="hidden">
+                      <thead id="weekly-calendar-header">
+                        <tr>
+                          <th></th>
+                          <th>SUN</th>
+                          <th>MON</th>
+                          <th>TUE</th>
+                          <th>WED</th>
+                          <th>THU</th>
+                          <th>FRI</th>
+                          <th>SAT</th>
+                        </tr>
+                      </thead>
+                      <tbody id="weekly-calendar-body">
+                        <!-- Weekly calendar will be dynamically added here -->
+                      </tbody>
+                    </table>
+                    </div>
+                    
+                  
+            </div>
+            <div class="overlay"></div>
         </div>
     </div>
-  <div id="nav-mobile">
-    <div class="nav-hamburger">
-      <img src="assets/img/hamburger.png" alt="">
-    </div>
-    <h2 id="dashboard-mobile"> Dashboard </h2>
-  </div>
-    <div class="main">
-        <div class="dashboard">
-            <div class="dashboard--title">
-                <h1 id="db">Dashboard</h1>
-                <div class="dashboard--title__dots">
-                    <img src="assets/img/menu.png" alt="dots">
-                </div>
-            </div>
-            <div class="dashboard--classes">
-                <div class="dashboard--classes__box dashboard--classes__box__1">
-                    <div class="dashboard--classes__box__image"></div>
-                    <div class="dashboard--classes__box__description">
-                        <div class="dashboard--classes__box__controls__text">
-                            <h2>Web Design Decal</h2>
-                            <h3>CS 198 - lec 001</h3>
-                            <h4>Spring 2021</h4>
-                        </div>
-                        <div class="dashboard--classes__box__controls__buttons">
-                            <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
-                            <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
-                            <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
-                            <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
-                        </div>
-                    </div>
-                </div>
-                <div class="dashboard--classes__box dashboard--classes__box__2">
-                    <div class="dashboard--classes__box__image"></div>
-                    <div class="dashboard--classes__box__description">
-                        <div class="dashboard--classes__box__controls__text">
-                            <h2>Data Structures & Algorithms</h2>
-                            <h3>CS 61B - lec 001</h3>
-                            <h4>Spring 2020</h4>
-                        </div>
-                        <div class="dashboard--classes__box__controls__buttons">
-                            <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
-                            <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
-                            <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
-                            <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dashboard--classes__box dashboard--classes__box__3">
-                    <div class="dashboard--classes__box__image"></div>
-                   <div class="dashboard--classes__box__description">
-                        <div class="dashboard--classes__box__controls__text">
-                            <h2>Artificial Intelligence</h2>
-                            <h3>CS 188 - lec 001</h3>
-                            <h4>Spring 2021</h4>
-                        </div>
-                        <div class="dashboard--classes__box__controls__buttons">
-                            <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
-                            <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
-                            <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
-                            <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dashboard--classes__box dashboard--classes__box__4">
-                    <div class="dashboard--classes__box__image"></div>
-                   <div class="dashboard--classes__box__description">
-                        <div class="dashboard--classes__box__controls__text">
-                            <h2>Algorithms & Intractable Problems</h2>
-                            <h3>CS 170 - lec 001</h3>
-                            <h4>Fall 2020</h4>
-                        </div>
-                        <div class="dashboard--classes__box__controls__buttons">
-                            <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
-                            <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
-                            <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
-                            <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dashboard--classes__box dashboard--classes__box__5">
-                    <div class="dashboard--classes__box__image"></div>
-                    <div class="dashboard--classes__box__description">
-                        <div class="dashboard--classes__box__controls__text">
-                            <h2>Nature of Ethics</h2>
-                            <h3>PHILOS 2</h3>
-                            <h4>Fall 2017</h4>
-                        </div>
-                        <div class="dashboard--classes__box__controls__buttons">
-                            <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
-                            <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
-                            <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
-                            <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dashboard--classes__box dashboard--classes__box__6">
-                    <div class="dashboard--classes__box__image"></div>
-                   <div class="dashboard--classes__box__description">
-                        <div class="dashboard--classes__box__controls__text">
-                            <h2>Cultural Psychology</h2>
-                            <h3>COGSCI C127</h3>
-                            <h4>Fall 2019</h4>
-                        </div>
-                        <div class="dashboard--classes__box__controls__buttons">
-                            <img src="assets/img/announcements.png" class="dashboard--classes__box__controls__buttons--announcements">
-                            <img src="assets/img/assignment.png" class="dashboard--classes__box__controls__buttons--assignment">
-                            <img src="assets/img/chat.png" class="dashboard--classes__box__controls__buttons--chat">
-                            <img src="assets/img/files.png" class="dashboard--classes__box__controls__buttons--files">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="notifications">
-            <img src="assets/img/bcourses.png" alt="" id="bcourses">
-            <div class="notifications__todo--title">
-                <h2>To Do</h2>
-            </div>
-            <div class="notifications__notifs">
-                <div class="notifications__notifs--box">
-                    <img src="assets/img/announcements.png" alt="">
-                    <div class="notifications__notifs--text">
-                        <h1>Homework #5!</h1>
-                        <h2>Web Design Decal</h2>
-                        <h3>March 10, 2021 at 11:59 PM</h3>
-                    </div>
-                </div>
-                <div class="notifications__notifs--box">
-                    <img src="assets/img/announcements.png" alt="">
-                    <div class="notifications__notifs--text">
-                        <h1>Final Review Sessions</h1>
-                        <h2>COGSCI C127</h2>
-                        <h3>March 5, 2020</h3>
-                    </div>
-                </div>
-                <div class="notifications__notifs--box">
-                    <img src="assets/img/announcements.png" alt="">
-                    <div class="notifications__notifs--text">
-                        <h1>Reading Respose #3 Due!</h1>
-                        <h2>Cultural Psychology</h2>
-                        <h3>July 17, 2019 at 11:59 PM</h3>
-                    </div>
-                </div>
-                <div class="notifications__notifs--box">
-                    <img src="assets/img/announcements.png" alt="">
-                    <div class="notifications__notifs--text">
-                        <h1>Midterm Scores Released</h1>
-                        <h2>CS61B</h2>
-                        <h3>March 19, 2020 at 12:59 PM</h3>
-                    </div>
-                </div>
-                <div class="notifications__notifs--box">
-                    <img src="assets/img/announcements.png" alt="">
-                    <div class="notifications__notifs--text">
-                        <h1>Problem Set #4</h1>
-                        <h2>CS 170</h2>
-                        <h3>September 29, 2020 at 11:59 PM</h3>
-                    </div>
-                </div>
-                <div class="notifications__notifs--box">
-                    <img src="assets/img/announcements.png" alt="">
-                    <div class="notifications__notifs--text">
-                        <h1>Syllabus Week</h1>
-                        <h2>PHILOS 3</h2>
-                        <h3>October 19, 2017 at 11:59 PM</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
+    
+    <script src="assets/main.js"></script>
 </body>
 
 </html>

@@ -47,8 +47,8 @@ h4 {
   background-color: #003262;
   padding: 13px 10px 10px 10px;
   position: fixed;
-
   height: 100vh;
+  z-index: 2000;
 }
 
 #nav-mobile {
@@ -98,6 +98,8 @@ h4 {
   display: flex;
   width: 100%;
   margin-left: 85px;
+  flex: 1;
+  /* position: relative; */
 }
 .dashboard {
   width: 100%;
@@ -266,6 +268,134 @@ h4 {
   text-decoration: none;
 }
 
+
+/* .content-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+} */
+
+.account-section {
+  position: absolute;
+  z-index: 1001;
+  /* display: none; */
+  top: 0;
+  left: -350px; 
+  width: 350px;
+  height: 100%;
+  margin-left: 85px;
+  background-color: #fff;
+  transition: left 0.3s ease;
+}
+
+
+#account {
+  display: flex;
+  flex-direction: column;
+}
+
+.x {
+  margin-right: auto;
+}
+
+.x button {
+  background: white;
+  border: none;
+  color: gray;
+  font-size: 20px;
+}
+
+.x button:hover {
+  cursor: pointer;
+}
+
+#profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#profile-img-wrapper {
+/*   margin-right: 10px; */
+}
+
+#profile-img-wrapper img {
+  width: 70px;
+  height: 70px;
+}
+
+#logout {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#account-links {
+  border-top: 1px solid lightgray;
+}
+
+#acc-links {
+  list-style-type: none;
+  
+}
+
+#acc-links a {
+  color: #1770ab;
+  text-decoration: none;
+  
+}
+
+#acc-links li {
+  margin: 20px 0;
+}
+
+#courses {
+  display: flex;
+  flex-direction: column;
+}
+
+#course-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#course-info h1 {
+  margin-bottom: 20px;
+}
+
+#course-links {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+#course-list {
+  list-style-type: none;
+  
+}
+
+#course-list a {
+  color: #1770ab;
+  text-decoration: none;
+  
+}
+
+#course-list li {
+  margin: 20px 0;
+}
+
+#all-courses-link a {
+  color: #1770ab;
+  text-decoration: none;
+}
+
+#all-courses-link p {
+  margin-right: 20px;
+}
+
+
+
 @media (min-width: 1100px) {
   .dashboard--classes {
     width: 894px;
@@ -354,3 +484,151 @@ h4 {
     margin-right: 0px;
   }
 }
+
+#dash {
+  /* display: flex; */
+  width: 100%;
+}
+
+/* CALENDAR */
+
+
+#cal {
+  padding: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+#calendar-controls button:not(.exclude) {
+padding: 10px 15px;
+font-size: 16px;
+border: 1px solid lightgray;
+/* border-radius: 5px; */
+}
+
+#calendar-controls {
+display: flex;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+#calendar-controls-left button {
+margin: 0 5px;
+}
+
+#prev-month {
+margin-right: 0;
+}
+
+#next-month {
+margin-left: 0;
+}
+
+
+
+#calendar-controls-right {
+margin-left: auto;
+}
+
+#calendar-controls-right button {
+  float: left;
+  }
+
+
+
+table {
+/*       width: 100%; */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+ 
+  
+}
+td {
+width: 120px; 
+  height: 110px; 
+
+}
+
+th {
+  background-color: white;
+  border: white;
+  border-top: 1px solid lightgray;
+  color: gray;
+  padding: 25px 0;
+}
+
+.previous-month, .next-month {
+  color: #888888; 
+}
+
+.day-number {
+  position: relative;
+  bottom: 45px;
+  right: 50px; 
+}
+.current-date {
+  background-color: #e0e0e0; 
+}
+
+.current-day {
+background-color: #FFEABC;
+}
+
+.current-hour {
+border-bottom: 2px solid #FCDE9C;
+}
+
+#weekly-calendar td {
+width: 120px;
+height: 30px; 
+font-size: 14px;
+
+}
+
+#weekly-calendar .hours {
+width: 50px;
+left: 20px;
+}
+
+.calendar-container {
+  width: fit-content;
+  height: 600px; 
+  overflow-y: auto; 
+  border-bottom: 1px solid lightgray; 
+}
+
+
+
+#weekly-calendar-header th {
+  position: sticky;
+  top: 0;
+}
+
+.active-btn {
+background-color: #424141;
+color: white;
+}
+
+#curr-month, #curr-week {
+background: white;
+border: 1px solid white;
+font-size: 16px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: none;
+  z-index: 1000;
+}
+
